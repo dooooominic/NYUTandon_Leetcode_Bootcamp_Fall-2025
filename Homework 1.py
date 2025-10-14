@@ -1,9 +1,10 @@
+from typing import List
 '''
 Homework Assignment 1: Leetcode Bootcamp Section 1 Fall 2025
 '''
 
 
-#Problem 1: Two pointers 
+#Problem 1: Two pointers  
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         curr = left = 0

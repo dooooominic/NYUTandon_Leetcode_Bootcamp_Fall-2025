@@ -1,3 +1,6 @@
+from typing import List
+from collections import defaultdict
+
 '''
 Homework Assignment 2: Leetcode Bootcamp Section 1 Fall 2025
 '''
