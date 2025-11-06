@@ -26,8 +26,18 @@ class Solution:
         return left or right  
 
 
-#Problem 2: 
-
-
-
-#Problem 3: 
+#Problem 2: Leetcode 347: Top K Frequent Elements
+from collections import defaultdict
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        dic = defaultdict(int)
+        heap = []
+        for num in nums:
+            dic[num]+=1
+        for key, val in dic.items():
+            heapq.heappush(heap, (-val, key))
+        res = []
+        while len(res) < k:
+            res.append(heapq.heappop(heap)[1])
+            
+        return res
